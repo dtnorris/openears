@@ -1,23 +1,24 @@
 {
   "development": {
-    "username": "root",
+    "username": "dtengdin",
     "password": null,
-    "database": "database_development",
+    "database": "openears-dev",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "port": 5432,
+    "dialect": "postgres"
   },
   "test": {
-    "username": "root",
+    "username": "dtengdin",
     "password": null,
-    "database": "database_test",
+    "database": "openears-test",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   },
   "production": {
-    "username": "root",
+    "username": "dtengdin",
     "password": null,
-    "database": "database_production",
+    "database": "openears-production",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   }
 }
