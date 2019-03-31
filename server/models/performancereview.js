@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
 
 module.exports = (sequelize, DataTypes) => {
   const PerformanceReview = sequelize.define('PerformanceReview', {
-    content: {
-      name: DataTypes.STRING,
+    name: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
     currentStep: {
@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   PerformanceReview.associate = (models) => {
-    PerformanceReview.belongsTo(models.Todo, {
+    PerformanceReview.belongsTo(models.User, {
       foreignKey: 'userId',
       onDelete: 'CASCADE',
     });

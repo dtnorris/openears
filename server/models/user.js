@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
-    title: DataTypes.STRING
+    name: DataTypes.STRING
   }, {});
 
   User.associate = function(models) {
@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
 
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
-    title: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
